@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Cool Company</title>
+        <link
+            rel="stylesheet"
+            href="css/main.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap"
+            rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+            rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <div class="container-header">
+                    <div class="left-side-text">
+                        <img
+                            src="./img/logo.png"
+                            alt=""
+                            class="header-logo animate__animated animate__wobble" />
+                        <div class="header-text-top">
+                            С помощью нас вы сможете создать то, о чем <span>желаете!</span>
+                        </div>
+                        <div class="header-text-mid">
+                            Наши возможности + опыт позволят Вам достичь огрмного успеха. Мы верим в вас! И знаем это на
+                            все 100%. Вас не остановить!
+                        </div>
+                        <button class="header-button">Узнать больше...</button>
+                    </div>
+                    <div class="photo-phone animate__animated animate__bounce">
+                        <img
+                            src="./img/header-img.png"
+                            alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="middle-top">
+                <div class="container">
+                    <div class="head">Что Вам необходимо?</div>
+                    <div class="cards">
+                        <div class="card">
+                            <img
+                                src="./img/f3.png"
+                                alt="" />
+                            <div class="card-header">Первый блок</div>
+                            <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="./img/f4.png"
+                                alt="" />
+                            <div class="card-header">Второй блок</div>
+                            <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="./img/f5.png"
+                                alt="" />
+                            <div class="card-header">Третий блок</div>
+                            <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="validate-form">
+                <div class="container">
+                    <h2>Order Information</h2>
+                    <form
+                        action=""
+                        method="post"
+                        class="form">
+                        <div class="input-block">
+                            First Name:
+                            <input
+                                id="firstName"
+                                onblur="checkFirstname()"
+                                required
+                                type="text"
+                                placeholder="name" />
+                            <span id="firstname_check"></span>
+                        </div>
+                        <div class="input-block">
+                            Last Name:
+                            <input
+                                id="lastName"
+                                onblur="checkLastname()"
+                                required
+                                type="text"
+                                placeholder="surname" />
+                            <span id="lastname_check"></span>
+                        </div>
+                        <div class="input-block">
+                            Phone number:
+                            <input
+                                id="phone"
+                                onblur="checkPhone()"
+                                required
+                                type="tel"
+                                placeholder="912-345-67-89" />
+                            <span id="phone_check"></span>
+                        </div>
+                        <div class="input-block">
+                            Quantity:
+                            <input
+                                id="quantity"
+                                onblur="checkQuantity()"
+                                required
+                                type="text"
+                                placeholder="5" />
+                            <span id="quantity_check"></span>
+                            <div class="input-block">
+                                Payment method:
+                                <br />
+                                <select
+                                    name="payment-method"
+                                    required>
+                                    <option>Cash</option>
+                                    <option>Card online</option>
+                                    <option>Card to the courier</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div
+                            class="btn"
+                            onclick="orderComplete()">
+                            Send Order
+                        </div>
+                    </form>
+                    <div class="order-summary">
+                        <span id="orderSummary"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="communicate">
+                <div class="container">
+                    <div class="communicate-text">Форма заказа обратного звонка</div>
+                    <form
+                        action="#"
+                        method="post"
+                        class="form">
+                        <input
+                            required
+                            type="text"
+                            placeholder="Имя" />
+                        <br />
+                        <input
+                            required
+                            type="email"
+                            placeholder="Введите свой E-mail" />
+                        <br />
+                        <input
+                            required
+                            min="10"
+                            max="11"
+                            pattern="\d+"
+                            type="tel"
+                            placeholder="Телефон" />
+                        <br />
+                        <input
+                            required
+                            type="text"
+                            min="5"
+                            max="120"
+                            placeholder="Какая тема Вас интересует?" />
+                        <br />
+                        <button
+                            type="submit"
+                            class="form-button">
+                            Отравить вопрос!
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-text">© Все на этом сайте защищено</div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/validation.js"></script>
+    </body>
+</html>

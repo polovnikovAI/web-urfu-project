@@ -1,0 +1,378 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container-header {
+    /* width: 100%; */
+    height: 600px;
+    margin: 0 auto;
+    background: rgb(0, 133, 198);
+    background: linear-gradient(0deg, rgba(0, 133, 198, 1) 0%, rgba(114, 215, 244, 1) 100%);
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-side-text {
+    width: 500px;
+    color: #fff;
+    text-align: justify;
+}
+.header-logo {
+    margin-bottom: 20px;
+}
+.header-text-top {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+span {
+    font-size: 48px;
+}
+.header-text-mid {
+    margin-bottom: 40px;
+}
+button {
+    padding: 15px 30px;
+    background-color: #d9d61e;
+    font-size: 14px;
+    font-weight: 600;
+    border: 0px;
+}
+
+.middle-top {
+    background-color: #fff;
+}
+.head {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    margin-top: 50px;
+}
+.card-header {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card-text {
+    color: #9b9b9b;
+}
+
+.communicate {
+    background-color: #ececec;
+    display: flex;
+    justify-content: center;
+}
+.communicate-text {
+    font-size: 30px;
+    font-weight: 900;
+    margin: 80px 0 50px 0;
+}
+input {
+    border: 2px solid #ccc;
+    padding: 10px 20px;
+    margin: 10px 0 10px 0;
+    width: 400px;
+}
+.form-button {
+    width: 444px;
+    margin-top: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 80px;
+}
+
+.footer {
+    height: 150px;
+    background: rgb(5, 121, 241);
+    background: linear-gradient(
+        0deg,
+        rgba(5, 121, 241, 1) 0%,
+        rgba(5, 49, 241, 1) 50%,
+        rgba(5, 173, 237, 0.9920343137254902) 100%
+    );
+    color: #fff;
+}
+.container {
+    text-align: center;
+}
+.footer-text {
+    padding-top: 75px;
+}
+
+.validate-form {
+    background-color: lightsteelblue;
+    padding-top: 30px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+.input-block {
+    width: 500px;
+}
+.validate-form span {
+    font-size: 26px;
+}
+.order-summary {
+    font-size: 22px;
+    text-align: center;
+    color: green;
+}
+.btn {
+    margin: 20px 0;
+    padding: 10px 8px;
+    background-color: lightgreen;
+    border: 1px solid lightskyblue;
+    border-radius: 8px;
+}
+.btn:hover {
+    scale: 0.97;
+}
+/* Media запросы. Адаптивность */
+
+@media screen and (max-width: 1250px) {
+    .container-header {
+        height: 400px;
+        margin: 0 auto;
+        padding: 40px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .left-side-text {
+        width: 500px;
+    }
+    .header-logo {
+        margin-bottom: 15px;
+    }
+    .header-text-top {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    span {
+        font-size: 36px;
+    }
+    .header-text-mid {
+        margin-bottom: 30px;
+    }
+    button {
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+    .photo-phone {
+        display: none;
+    }
+    .head {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        font-weight: 900;
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
+    .cards {
+        display: flex;
+        justify-content: center;
+    }
+    .card {
+        width: 400px;
+        height: 300px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .card-header {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .communicate {
+        display: flex;
+        justify-content: center;
+    }
+    .communicate-text {
+        font-size: 30px;
+        margin: 80px 0 50px 0;
+    }
+    input {
+        border: 2px solid #ccc;
+        padding: 10px 20px;
+        margin: 10px 0 10px 0;
+        width: 70%;
+    }
+    .form-button {
+        width: 444px;
+        margin-top: 10px;
+        margin-bottom: 80px;
+    }
+
+    .footer {
+        height: 150px;
+    }
+    .container {
+        text-align: center;
+    }
+    .footer-text {
+        padding-top: 75px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-header {
+        height: 250px;
+        margin: 0 auto;
+        padding: 40px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .left-side-text {
+        width: 100%;
+    }
+    .header-logo {
+        margin-bottom: 15px;
+    }
+    .header-text-top {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    span {
+        font-size: 30px;
+    }
+    .header-text-mid {
+        margin-bottom: 25px;
+    }
+    button {
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+    .photo-phone {
+        display: none;
+    }
+    .head {
+        font-size: 30px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .cards {
+        display: flex;
+        justify-content: center;
+    }
+    .card {
+        width: 250px;
+        height: 200px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .card-header {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .communicate {
+        display: flex;
+        justify-content: center;
+    }
+    .communicate-text {
+        font-size: 30px;
+    }
+    input {
+        padding: 10px 20px;
+        margin: 10px 0 10px 0;
+        width: 60%;
+    }
+    .form-button {
+        width: 344px;
+        margin-top: 10px;
+        margin-bottom: 80px;
+        width: 71%;
+    }
+    .footer {
+        height: 100px;
+    }
+    .container {
+        text-align: center;
+    }
+    .footer-text {
+        padding-top: 42px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .container-header {
+        height: 250px;
+        margin: 0 auto;
+        padding: 40px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .left-side-text {
+        width: 100%;
+    }
+    .header-logo {
+        margin-bottom: 15px;
+    }
+    .header-text-top {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    span {
+        font-size: 30px;
+    }
+    .header-text-mid {
+        margin-bottom: 25px;
+    }
+    button {
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+    .head {
+        font-size: 27px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .cards {
+        display: flex;
+        justify-content: center;
+    }
+    .card {
+        width: 33%;
+        height: 180px;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .card-header {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .communicate {
+        display: flex;
+        justify-content: center;
+    }
+    .communicate-text {
+        font-size: 27px;
+    }
+    input {
+        padding: 10px 20px;
+        margin: 10px 0 10px 0;
+        width: 50%;
+    }
+    .form-button {
+        width: 344px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        width: 61%;
+    }
+}
