@@ -49,21 +49,21 @@
                 <div class="container">
                     <div class="head">Что Вам необходимо?</div>
                     <div class="cards">
-                        <div class="card">
+                        <div class="card card-1">
                             <img
                                 src="./img/f3.png"
                                 alt="" />
                             <div class="card-header">Первый блок</div>
                             <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
                         </div>
-                        <div class="card">
+                        <div class="card card-2">
                             <img
                                 src="./img/f4.png"
                                 alt="" />
                             <div class="card-header">Второй блок</div>
                             <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
                         </div>
-                        <div class="card">
+                        <div class="card card-3">
                             <img
                                 src="./img/f5.png"
                                 alt="" />
@@ -80,44 +80,48 @@
                         action=""
                         method="post"
                         class="form">
+                        First Name:
                         <div class="input-block">
-                            First Name:
                             <input
                                 id="firstName"
                                 onblur="checkFirstname()"
                                 required
                                 type="text"
                                 placeholder="name" />
+                            <br />
                             <span id="firstname_check"></span>
                         </div>
+                        Last Name:
                         <div class="input-block">
-                            Last Name:
                             <input
                                 id="lastName"
                                 onblur="checkLastname()"
                                 required
                                 type="text"
                                 placeholder="surname" />
+                            <br />
                             <span id="lastname_check"></span>
                         </div>
+                        Phone number:
                         <div class="input-block">
-                            Phone number:
                             <input
                                 id="phone"
                                 onblur="checkPhone()"
                                 required
                                 type="tel"
                                 placeholder="912-345-67-89" />
+                            <br />
                             <span id="phone_check"></span>
                         </div>
+                        Quantity:
                         <div class="input-block">
-                            Quantity:
                             <input
                                 id="quantity"
                                 onblur="checkQuantity()"
                                 required
                                 type="text"
                                 placeholder="5" />
+                            <br />
                             <span id="quantity_check"></span>
                             <div class="input-block">
                                 Payment method:
